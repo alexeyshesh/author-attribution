@@ -52,7 +52,6 @@ def create_dataset(path: str, sample_len=1000, app=None, thread=None):
 
 
 def get_files(path: str) -> dict:
-    # TODO: проверка пустоты папок
     authors = os.listdir(path)
     texts = dict.fromkeys(authors, [])
     for author in authors:
